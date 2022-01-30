@@ -2,6 +2,7 @@
   font-family: 'Roboto', sans-serif
 
 @import 'variables'
+@import 'mixin'
 
 header
   position: relative
@@ -78,6 +79,7 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .promo
   min-height: 800px
@@ -126,6 +128,7 @@ nav
     font-weight: 400
     font-size: 18px
     text-transform: uppercase
+    +btn_hover
 
 .label
   margin: 0 auto
@@ -228,6 +231,26 @@ nav
             margin-top: 0 auto
             border-radius: 100%
             cursor: pointer
+            &:before
+              content: ''
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $text_color_blue
+            &:after
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block
+              height: 14px
+              width: 2px
+              background-color: $text_color_blue
+            &:hover
+              &:before, &:after
+                background-color: $text_color_pink
+              
+              
 
 .auto
     padding-top: 54px
