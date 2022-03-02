@@ -272,6 +272,8 @@
                 margin-left: 10px
 
 @media (max-width: 575px)
+    .nav
+        width: 100%
     .subheader
         height: 60px
         &_official
@@ -331,6 +333,7 @@
             line-height: 16px
         .car_auto
             height: 243px
+            padding: 0
     .require
         padding: 22px 0 26px 0
         &_block
@@ -349,14 +352,32 @@
             padding-top: 10px
         .text_world
             margin-top: 230px
-    .footer_wrapper
-        flex-direction: column
-    .footer_icons
-        display: flex
-        justify-content: center
-        padding-top: 5px
-        left: 50%
-        transform: 
+    footer
+        .footer_wrapper
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+
+        .footer_wrapper > div
+            width: 100%
+            &:nth-child(3)
+                justify-content: center
+                margin-top: 20px
+            
+        .footer_icons
+            position: relative
+            left: 50%
+            display: flex
+            transform: translateX(-50%)
+            justify-content: center
+            padding-top: 5px
+            
+        .footer_apps
+            display: flex
+            justify-content: center
+            
+            
 
 
     
