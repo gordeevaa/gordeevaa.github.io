@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/gordeevaa/uber_project#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.9",
     "cli": "^1.0.1",
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "sass": "^1.49.9"
   },
   "dependencies": {
     "gulp-sass": "^5.1.0"
